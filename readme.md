@@ -44,6 +44,7 @@ A abordagem de IA escolhida é a **Monte Carlo Tree Search (MCTS)**.  MCTS é um
 ├── gpu_utils.py            # Funções auxiliares para o agente GPU (achatamento de dados)
 ├── logica.py               # Contém as regras e a lógica central do jogo de Truco
 ├── tournament.py           # Script para executar o torneio final entre as IAs
+├── main.py (e afins)       # Arquivos usados pra rodar a versão dos agentes em questão
 ├── requirements.txt        # Dependências do projeto
 └── README.md               # Este arquivo
 ```

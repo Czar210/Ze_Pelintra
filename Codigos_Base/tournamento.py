@@ -11,7 +11,7 @@ from time_limit_gpu import GPUAgenteMCTS as AgenteGPU
 
 # --- CLASSE PARA REPRESENTAR NOSSOS COMPETIDORES ---
 class Competidor:
-    def __init__(self, nome, tipo_agente, time_limit=30):
+    def __init__(self, nome, tipo_agente, time_limit=0.1):
         self.nome = nome
         self.tipo_agente = tipo_agente
         self.time_limit = time_limit
@@ -124,13 +124,13 @@ def main():
     print("🏆 BEM-VINDO AO GRANDE TORNEIO DE IAs DE TRUCO! 🏆\n")
 
     competidores = []
-    for i in range(2): competidores.append(Competidor(f"SingleCore_Bot_{i+1}", 'single'))
-    for i in range(3): competidores.append(Competidor(f"MultiCore_Bot_{i+1}", 'multi'))
-    for i in range(3): competidores.append(Competidor(f"GPU_Bot_{i+1}", 'gpu'))
+    for i in range(5): competidores.append(Competidor(f"SingleCore_Bot_{i+1}", 'single'))
+    for i in range(5): competidores.append(Competidor(f"MultiCore_Bot_{i+1}", 'multi'))
+    for i in range(6): competidores.append(Competidor(f"GPU_Bot_{i+1}", 'gpu'))
 
     random.shuffle(competidores)
     
-    fases = {8: 'QUARTAS DE FINAL', 4: "SEMIFINAIS", 2: "GRANDE FINAL"}
+    fases = {16: 'oitavas de final', 8: 'QUARTAS DE FINAL', 4: "SEMIFINAIS", 2: "GRANDE FINAL"}
     competidores_na_rodada = competidores
     
     while len(competidores_na_rodada) > 1:
