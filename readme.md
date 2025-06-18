@@ -59,8 +59,8 @@ A abordagem de IA escolhida é a **Monte Carlo Tree Search (MCTS)**.  MCTS é um
 ### Instalação
 1.  Clone o repositório:
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
-    cd <NOME_DA_PASTA>
+    git clone https://github.com/Czar210/Ze_Pelintra
+    cd Ze_Pelintra
     ```
 2.  Crie e ative um ambiente virtual:
     ```bash
